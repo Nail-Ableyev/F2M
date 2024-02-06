@@ -1,0 +1,7 @@
+.downArrow__top {
+    animation: hideshow 1s ease 3;
+}
+
+.downArrow__bottom {
+    animation: hideshow 1s 0.5s ease 3;
+}

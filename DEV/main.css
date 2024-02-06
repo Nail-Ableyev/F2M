@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Nunito Regular"), local("Nunito-Regular"),
+    url("./nunito-v9-latin-regular.woff2")
+    format("woff2")
+}
+
+@keyframes hideshow {
+    0% { opacity: 1; }
+    10% { opacity: 1; }
+    35% { opacity: 0.5; }
+    70% { opacity: 0.5; }
+    100% { opacity: 0; }
+}
+
+:root {
+    --primary-color: #0a9b00;
+    --primary-shade: #087700;
+    --secondary-content:#bebebe;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Nunito";
+}
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+
+
+

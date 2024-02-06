@@ -1,0 +1,107 @@
+.buttonGeneral {
+    border-radius: 100px;
+    border: 0;
+    box-shadow: rgba(1,60,136,.5) 0 -1px 3px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    position: relative;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    transition: all .3s cubic-bezier(.22, .61, .36, 1);
+    }
+    .buttonGeneral svg {
+        vertical-align:middle;
+    }
+    .buttonGeneral:hover svg{
+        transform: scale(0.6);
+        transition: transform .3s ease;
+
+    }
+    .buttonGeneral--transformed {
+        transform: scale(0.5);
+        transition: transform .3s ease;
+}
+
+.buttonGeneral__main {
+    background-color: var(--primary-color);
+    color: #fff;
+    min-height: 56px;
+    max-width: 500px;
+    padding: 16px 44px;
+   }
+    .buttonGeneral__main:hover {
+    background-color: var(--primary-shade);
+    transform: translateY(-2px);
+}
+  
+.buttonGeneral__round {
+    border-radius: 1000px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-color);
+    color: #fff;
+    }
+    .buttonGeneral__round:hover {
+        background-color: var(--primary-shade);
+        transform: translateY(-2px);
+    }
+
+/*ActionPane*/
+
+.actionPane {
+    width: 6rem;
+    padding-block: 5px;
+    position: fixed;
+    bottom:0;
+    left:0
+}
+
+.actionPane__button {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    position: relative;
+    }
+    .actionPane__button svg {
+        vertical-align:middle;
+    }
+    .actionPane__button:hover .actionPane__tooltip {
+        visibility: visible;
+    }
+
+.actionPane__tooltip {
+    visibility: hidden;
+    white-space: nowrap;
+    background-color: #f3f3f3;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+    position: absolute;
+    z-index: 1;
+    left: 110%;
+    -webkit-box-shadow: 0 0  10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 0 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0 0 10px 2px rgba(34, 60, 80, 0.2);
+    }
+    .actionPane__tooltip::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 100%;
+        margin-top: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent #f3f3f3 transparent transparent;
+}
+
+
